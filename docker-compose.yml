@@ -1,0 +1,13 @@
+version: "3"
+services:
+  db:
+    image: postgres
+    ports:
+      - "5432:5432"
+    environment:
+     POSTGRES_USER: mariano
+     POSTGRES_DB: proyecto2024
+     POSTGRES_PASSWORD: proyecto.2024
+    volumes:
+    - ./postgres:/var/lib/postgres 
+
